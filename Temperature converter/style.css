@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  align-items: center;
+  height: 100vh;
+  min-width: 108rem;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgba(52, 51, 51, 0.6), rgba(0, 0, 0, 0.9)),
+    url(https://pngtree.com/freebackground/simple-atmospheric-blue-temperature-needle-illustration-background_1145791.html);
+  background-size: cover;
+}
+html {
+  font-size: 62.5%;
+}
+
+img {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  position: absolute;
+  padding: 32px;
+  font-size: 12rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.block {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translate(0, -50%);
+  display: flex;
+  gap: 1.8rem;
+}
+.box {
+  position: relative;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: white;
+  width: 33%;
+  height: 80%;
+  margin: 3.2rem 0 0 3.2rem;
+  text-align: center;
+  padding: 2rem;
+  line-height: 5rem;
+}
+.box:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.box:nth-child(1) {
+  background-color: #ff4040;
+}
+.box:nth-child(2) {
+  background-color: #4070ff;
+}
+
+.box:nth-child(3) {
+  background-color: #62ff24;
+}
+
+.bg-unit {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.box:nth-child(1) .bg-unit {
+  color: #ff4b4b;
+}
+
+.box:nth-child(2) .bg-unit {
+  color: #537eff;
+}
+
+.box:nth-child(3) .bg-unit {
+  color: #7ffc4e;
+}
+.box h2,
+.box input {
+  position: relative;
+}
+
+.box h2 {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.box input::-webkit-outer-spin-button,
+.box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: none;
+}
+
+.box input {
+  border: none;
+  background: none;
+  margin-top: 18rem;
+  width: 18rem;
+  height: 5rem;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  position: relative;
+  top: 50%;
+  left: 60%;
+  height: 6rem;
+  width: 12rem;
+  background-color: #7ffc4e;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 1s;
+  border: none;
+  cursor: pointer;
+  /* padding: 1.6rem 3.2rem; */
+}
